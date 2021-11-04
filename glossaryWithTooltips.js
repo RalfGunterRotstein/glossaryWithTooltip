@@ -7,8 +7,8 @@
  * @copyright Copyright (c) 2021, Ralf Gunter Rotstein
  * @license https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License
  * 
- * @category glossaryWithTooltip
- * @package glossaryWithTooltip
+ * @category glossaryWithTooltips
+ * @package glossaryWithTooltips
  * @version 1.0.0
  */
 
