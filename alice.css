@@ -322,7 +322,6 @@ ul li::before {
 
 /* line 1, ../../xampp/htdocs/scss/_others.scss */
 html {
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
