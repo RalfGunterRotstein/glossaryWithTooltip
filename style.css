@@ -1,0 +1,69 @@
+.keyword {
+    position: relative;
+    cursor: default;
+    color: #4d7eda;
+    white-space: nowrap;
+    font-style: italic;
+  }
+  .keyword:after {
+    content: "?";
+    vertical-align: super;
+    font-size: 10px;
+    color: #000;
+    font-style: normal;
+  }
+  .keyword .keyword__definition {
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    width: 155px;
+    background-color: white;
+    color: #000;
+    padding: 16px;
+    border: 1px solid #4d7eda;
+    border-radius: 16px;
+    bottom: 100%;
+    white-space: normal;
+    font-style: normal;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .keyword:hover .keyword__definition {
+      opacity: 1;
+      pointer-events: unset;
+    }
+  }
+  .keyword.clicked .keyword__definition {
+    opacity: 1;
+  }
+  
+  #glossary__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  @media only screen and (max-width: 400px) {
+    #glossary__list {
+      grid-template-columns: 1fr;
+    }
+  }
+  #glossary__list > div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    padding-left: 8px;
+  }
+  #glossary__list dt {
+    padding-top: 16px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+  #glossary__list dd {
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    border-left: 1px solid #000;
+    flex-grow: 1;
+  }

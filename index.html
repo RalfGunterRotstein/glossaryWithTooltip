@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Glossary With Tooltip – Ralf’s Portfolio</title>
+		<meta name="description" content="A jQuery script and some CSS styles that highlight keywords, show their definition on hover and insert in the page a dictionary with all of them."/>
+
+		<link rel="stylesheet" href="/alice.css">
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="canonical" href="ralf.infinityfreeapp.com/glossary-with-tooltip">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Glossary With Tooltip – Ralf’s Portfolio">
+		<meta property="og:image" content="thumbnail.jpg" alt="Presentation of the website ralf.infinityfreeapp.com">
+		<meta property="og:description" content="A jQuery script and some CSS styles that highlight keywords, show their definition on hover and insert in the page a dictionary with all of them.">
+		<meta property="og:url" content="ralf.infinityfreeapp.com/glossary-with-tooltip">
+
+		<script src="jQuery.js"></script>
+		<script src="ClickHandler.js"></script>
+		<script src="glossaryWithTooltip.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a id="logo" href="/">
+				<span>Ralf’s Portfolio</span>
+				<span><b>Programming projects</b> developed by <b>Ralf Gunter Rotstein</b> (and a poem).</span>
+			</a>
+		</header>
+
+		<div id="intro">
+			<h1>Glossary With Tooltip</h1>
+			<p>This is a minimalist example of a <b>jQuery</b> script and some <b>CSS</b> styles that, together, highlight SPANS containing a “data-keyword” property, displaying their definition on hover, click or touch, and insert in the page a glossary with all the keywords and definitions in alphabetical order. <b>Click the keywords</b> to see their definitions. (Requires a script that adds the class “click” to clicked elements with the class “clickable”. I’ve used <a href="/click-handler">my own</a>.)</p>
+		</div>
+
+			
+		<main>
+			<div class="book">
+				<h2 class="no-border-top">From Sylvie and Bruno</h2>
+
+				<div class="poem">
+					<p>Let <span data-keyword="craft">craft</span>, <span data-keyword="ambition">ambition</span>, <span data-keyword="spite">spite</span>,<br>
+					Be <span data-keyword="quench">quenched</span> in Reason's night,<br>
+					Till weakness turn to might,<br>
+					Till what is dark be light,<br>
+					Till what is wrong be right!</p>
+				</div>
+
+				<h2 class="no-border-top">From JABBERWOCKY</h2>
+
+				<div class="poem">
+					<p class="speech">(Humpty Dumpty’s definitions.)</p>
+
+					<p>’Twas <span data-keyword="brillig">brillig</span>, and the <span data-keyword="slithy">slithy</span> <span data-keyword="tove">toves</span><br>
+					Did <span data-keyword="gyre">gyre</span> and <span data-keyword="gimble">gimble</span> in the <span data-keyword="wabe">wabe</span>;<br>
+					All <span data-keyword="mimsy">mimsy</span> were the <span data-keyword="borogove">borogoves</span>,<br>
+					And the <span data-keyword="mome">mome</span> <span data-keyword="rath">raths</span> <span data-keyword="outgrabe">outgrabe</span>.</p>
+				</div>
+			</div>
+
+			<h2>Glossary</h2>
+
+			<div id="glossary-wrapper"></div>
+
+			<div id="return-link__div"><a href="/">back to Ralf’s Portfolio</a></div>
+        </main>
+
+        <div class="quote">
+            <p class="quote__text">It takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that!</p>
+            
+            <span class="quote__author">Lewis Carroll</span>
+        </div>
+
+        
+        <footer>
+            <a href="/">Ralf’s Portfolio</a>
+        </footer>
+    </body>
+</html>
